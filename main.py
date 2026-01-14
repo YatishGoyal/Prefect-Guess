@@ -1,12 +1,12 @@
 import random
-n = random.randint(1, 100)
 
 def game():
+  n = random.randint(1, 100)
   a = -1
   global guesses
   guesses = 0
   while(a != n):
-    a = int(input("Guess The No.: "))
+    a = int(input("Guess The No.(1-100): "))
     if(a>n):
       print("Lower No. pls!")
       guesses+=1
